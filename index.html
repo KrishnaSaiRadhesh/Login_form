@@ -9,8 +9,8 @@
     <form action="LoginSucessful.html" method="get">
         <fieldset>
         <legend>Website Login</legend>
-        <input type="text" placeholder="Username"><br><br>
-        <input type="text" placeholder="Password"><br><br>
+        <input type="text" placeholder="Username" pattern="[A-Z].{5,12}" title="Length should be min 5 characters and max 10 characters (any type of characters)" required><br><br>
+        <input type="password" placeholder="Password" pattern=".{5,12}" title="Length should be min 5 characters and max 12 characters" required><br><br>
         <input type="submit" value="Login"><br><br>
         <a href="./Forgot.html">Forgot Password?</a>
         <a href="./Register.html">Register</a>
