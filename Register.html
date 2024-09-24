@@ -9,9 +9,9 @@
     <form action="RegistrationSuccessful.html" method="get">
         <fieldset>
         <legend>Register Form</legend>
-        <input type="text" placeholder="Username"><br><br>
-        <input type="text" placeholder="Password"><br><br>
-        <input type="email" placeholder="Email Id"><br>
+        <input type="text" placeholder="Username" pattern="[A-Z][a-z\d!@#&$]{5,12}" title="Length should be min 5 characters and max 12 characters (Combination of a Capital letter,small letters, a number and a symbols)" required><br><br>
+        <input type="text" placeholder="Password" pattern=".{5,12}" title="Length should be min 5 characters and max 12 characters (Combination any type of characters)"><br><br>
+        <input type="email" placeholder="Email Id" pattern="[a-zA-z\d@.]{5,}" title="Length should be min 5 characters with the Combination of characters like (Small,Capital,number,@ symbol and .symbol)"><br>
 
         <label for="gender">Gender:</label><br>
         <input type="radio" id="male" name="gender">
